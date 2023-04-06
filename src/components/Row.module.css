@@ -1,0 +1,69 @@
+.resultDashboardRow{
+    height: 56px;
+    width: 100%;
+    vertical-align: middle;
+    border-radius: 12px;
+    font-family: 'Hanken Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .red{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
+    color: #FF5555;
+  }
+
+  .yellow{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FFB21E;
+    color: #FFB21E;
+
+  }
+
+  .green{
+    /* Green (95% White) */
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #00BB8F;
+    color: #00BB8F;
+  }
+
+  .blue{
+    /* Blue (95% White) */
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #1125D6;
+    color: #1125D6;
+  }
+
+  .result{
+    /* Body (Bold) */
+    font-family: 'Hanken Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: right;
+
+    /* Dark Navy */
+
+    color: #303B59;
+  }
+
+  .denominator{
+    /* Body (Bold) */
+    font-family: 'Hanken Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: right;
+
+    /* Dark Navy */
+
+    color: #303B59;
+
+    opacity: 0.5;
+  }
