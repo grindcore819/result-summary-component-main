@@ -2,24 +2,38 @@ import Row from '@/components/row';
 import Head from 'next/head'
 import { useState, useEffect } from 'react'
 
+
+
 export default function Home() {
-  let [data, setData] = useState([])
   let average = 0;
-  useEffect(() => {
-    fetch('result-summary-component-main/api/hello')
-      .then((res) => res.json())
-      .then((data) => {
-        setData(data)
-      })
-  }, []);
 
-  if(data !== NaN){
-    data.map((value) => {
-      average += value.score;
-    });
+  const data = [
+    {
+      "category": "Reaction",
+      "score": 80,
+      "icon": "/images/icon-reaction.svg"
+    },
+    {
+      "category": "Memory",
+      "score": 92,
+      "icon": "/images/icon-memory.svg"
+    },
+    {
+      "category": "Verbal",
+      "score": 61,
+      "icon": "/images/icon-verbal.svg"
+    },
+    {
+      "category": "Visual",
+      "score": 72,
+      "icon": "/images/icon-visual.svg"
+    }
+  ];
+  data.map((value) => {
+    average += value.score;
+  });
 
-    average = Math.round(average / data.length);
-  }
+  average = Math.round(average / data.length);
 
   return (
     <>
